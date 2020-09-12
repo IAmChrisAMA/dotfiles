@@ -104,8 +104,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias icat="kitty +kitten icat"
 alias please="sudo" 
-alias cd..="cd .."
 alias sl="sh ~/.scripts/loop-sl.sh" 
+alias git-out="sh ~/.scripts/git-out.sh"
 
 ## wal
 
@@ -118,3 +118,6 @@ cat ~/.cache/wal/sequences
 
 ## Zathura-Pywal
 export PATH="/home/cdnutter/.local/bin:$PATH"
+
+## PATH
+PATH=$PATH$(find "$HOME/.scripts" -type d -not -path '/.' -printf ":%p")

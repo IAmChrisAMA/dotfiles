@@ -2,7 +2,7 @@ set nocompatible
 set wildmenu
 filetype off
 
-autocmd BufRead,BufNewFile *.md,*.text,*.txt setlocal spell
+autocmd BufRead,BufNewFile *.md,*.text,*.txt,*.tex setlocal spell
 set complete+=kspell
 set clipboard=unnamedplus
 
@@ -56,6 +56,10 @@ inoremap <F5> <C-R>=strftime("%x - %X")<CR>
 inoremap <F4> <C-R>\//==============================//<CR>
 inoremap <F6> <C-R>\\begin{center}\line(1,0){250}\end{center}<CR>
 
+autocmd FileType tex nnoremap <buffer> <C-e> :!clear && sh ~/.scripts/compile-scripts/latex.sh "%" <Enter>
+autocmd FileType c nnoremap <buffer> <C-e> :!clear && sh ~/.scripts/compile-scripts/c.sh "%" <Enter>
+autocmd FileType py nnoremap <buffer> <C-e> :!clear && sh ~/.scripts/compile-scripts/python.sh "%" <Enter>
+autocmd FileType cpp nnoremap <buffer> <C-e> :!clear && sh ~/.scripts/compile-scripts/cpp.sh "%" <Enter>
 
 function! XTermPasteBegin()
 	set pastetoggle=<Esc>[201~
@@ -63,6 +67,5 @@ function! XTermPasteBegin()
 	return ""
 endfunction
 
-autocmd FileType tex nnoremap <buffer> <C-c> :LLPStartPreview <Enter>
-
 let g:livepreview_previewer = 'zathura'
+i
