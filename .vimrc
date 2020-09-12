@@ -51,6 +51,12 @@ let &t_EI .= "\<Esc>[?2004l"
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
+nnoremap <F5> "=strftime("%x - %X")<CR>P
+inoremap <F5> <C-R>=strftime("%x - %X")<CR>
+inoremap <F4> <C-R>\//==============================//<CR>
+inoremap <F6> <C-R>\\begin{center}\line(1,0){250}\end{center}<CR>
+
+
 function! XTermPasteBegin()
 	set pastetoggle=<Esc>[201~
 	set paste

@@ -1,0 +1,5 @@
+[user]
+	email = cdnutter@gmail.com
+	name = Chris Nutter
+[credential]
+	helper = cache --timeout=86400

@@ -1,0 +1,7 @@
+bullets.vim
+indentpython.vim
+python-syntax
+vim-latex-live-preview
+vim-python-pep8-indent
+vim-surround
+Vundle.vim
