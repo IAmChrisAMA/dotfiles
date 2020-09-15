@@ -5,7 +5,7 @@ trap "tput cnorm; exit" 2
 clear
 neofetch 
 tput civis 
-read -q
+read -p ""
 tput cnorm
 
  
