@@ -452,8 +452,10 @@ exec_always sh ~/.scripts/monitor-setup.sh && xrdb ~/.Xresources
 
 # --> Mounting All Network Drives
 bindsym $mod+Shift+m exec kitty -e sudo umount /mnt/purple /mnt/blue/*
-bindsym $mod+m       exec kitty -e mount-purple && mount-blue 
+bindsym $mod+m       exec kitty -e mount-*
 
+# --> Allow Local Access to Website
+bindsym $mod+Shift+h exec kitty -e sudo sh ~/.scripts/host-domain-fix.sh
 
 # Unused
 ########################################################
