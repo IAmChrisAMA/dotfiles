@@ -106,6 +106,10 @@ alias icat="kitty +kitten icat"
 alias please="sudo" 
 alias sl="sh ~/.scripts/loop-sl.sh" 
 alias git-out="sh ~/.scripts/git-out.sh"
+alias git-in="sh ~/.scripts/git-in.sh"
+
+alias mount-purple="sh ~/.scripts/mount-scripts/purple.sh"
+alias mount-blue="sh ~/.scripts/mount-scripts/blue.sh"
 
 ## wal
 
