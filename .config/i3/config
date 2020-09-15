@@ -427,19 +427,28 @@ mode "$mode_gaps_outer" {
 }
 
 # Custom Scripts
+########################################################
 
+# --> Colorscheme
 exec_always --no-startup-id wal -i ~/Pictures/Wallpapers/
-exec_always sh ~/.config/polybar/launch.sh
 exec_always sh ~/.scripts/pywal-dunst.sh
 
+# --> Taskbar
+exec_always sh ~/.config/polybar/launch.sh
+
+# --> Transparency
 exec pkill picom
 exec picom -b -f
 
+# --> Music
 exec mpd ~/.config/mpd/mpd.conf
 exec mpc update
 
+# --> Cross-platform M&K Support 
 exec synergyc --no-tray --restart --name Gray 192.168.1.236:24800
 
-# Extra
+# --> Xresources DPI Switcher 
+exec_always sh ~/.scripts/dpi-switch.sh && xrdb ~/.Xresources
 
+# Unused
 #exec kitty ~/.scripts/monitor-setup.sh

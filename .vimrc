@@ -1,5 +1,6 @@
 set nocompatible
 set wildmenu
+set nowrap
 filetype off
 
 autocmd BufRead,BufNewFile *.md,*.text,*.txt,*.tex setlocal spell

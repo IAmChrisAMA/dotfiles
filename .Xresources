@@ -1,4 +1,6 @@
-Xft.dpi:       112
+Xft.dpi:       128 
+! 96 = 1080p | 128 = 1440p
+
 Xft.antialias: true
 Xft.hinting:   true
 Xft.rgba:      rgb
