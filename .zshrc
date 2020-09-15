@@ -110,6 +110,7 @@ alias git-in="sh ~/.scripts/git-in.sh"
 
 alias mount-purple="sh ~/.scripts/mount-scripts/purple.sh"
 alias mount-blue="sh ~/.scripts/mount-scripts/blue.sh"
+alias mount-\*="sh ~/.scripts/mount-scripts/blue.sh && sudo ~/.scripts/mount-scripts/purple.sh"
 
 ## wal
 

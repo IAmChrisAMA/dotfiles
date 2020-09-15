@@ -448,14 +448,13 @@ exec mpc update
 exec synergyc --no-tray --restart --name Gray 192.168.1.236:24800
 
 # --> Xresources DPI Switcher 
-exec_always sh ~/.scripts/dpi-switch.sh && xrdb ~/.Xresources
+exec_always sh ~/.scripts/monitor-setup.sh && xrdb ~/.Xresources
 
 # --> Mounting All Network Drives
-bindsym $mod+Shift+m exec kitty -e sudo umount /mnt/blue/* && sudo umount /mnt/*
+bindsym $mod+Shift+m exec kitty -e sudo umount /mnt/purple /mnt/blue/*
 bindsym $mod+m       exec kitty -e mount-purple && mount-blue 
 
 
 # Unused
 ########################################################
 
-#exec kitty ~/.scripts/monitor-setup.sh
