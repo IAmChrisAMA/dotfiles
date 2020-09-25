@@ -1,6 +1,6 @@
 [global]
     frame_width = 1
-    frame_color = "#B2B9C7"
+    frame_color = "#8C867D"
     
     font = Noto Sans 10
     
@@ -181,18 +181,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#103723"
-    foreground = "#B2B9C7"
+    background = "#010103"
+    foreground = "#8C867D"
     timeout = 10
 
 [urgency_normal]
-    background = "#103723"
-    foreground = "#B2B9C7"
+    background = "#010103"
+    foreground = "#8C867D"
     timeout = 10
 
 [urgency_critical]
-    background = "#103723"
-    foreground = "#B2B9C7"
+    background = "#010103"
+    foreground = "#8C867D"
     timeout = 0
 
 
@@ -252,8 +252,8 @@
 #    appname = claws-mail
 #    category = email.arrived
 #    urgency = normal
-#    background = "#103723"
-#    foreground = "#B2B9C7"
+#    background = "#010103"
+#    foreground = "#8C867D"
 #
 #[mute.sh]
 #     appname = mute
@@ -263,40 +263,40 @@
 #[JDownloader]
 #    appname = JDownloader
 #    category = JD
-#    background = "#103723"
-#    foreground = "#B2B9C7"
+#    background = "#010103"
+#    foreground = "#8C867D"
 #
 #[newsbeuter]
 #    summary = *Feeds*
-#    background = "#103723"
-#    foreground = "#B2B9C7"
+#    background = "#010103"
+#    foreground = "#8C867D"
 #
 [irc]
         appname = weechat
         timeout = 0
-        background = "#103723"
-        foreground = "#B2B9C7"
+        background = "#010103"
+        foreground = "#8C867D"
 #
 [weechat hl]
      appname = weechat
      category = weechat.HL
-     background = "#103723"
-     foreground = "#B2B9C7"
+     background = "#010103"
+     foreground = "#8C867D"
 #
 [weechat pn]
      appname = weechat
      category = weechat.PM
-     background = "#103723"
-     foreground = "#B2B9C7"
+     background = "#010103"
+     foreground = "#8C867D"
 #
 #[CMUS]
 #    appname = CMUS
 #    category = cmus
-#    background = "#103723"
-#    foreground = "#B2B9C7"
+#    background = "#010103"
+#    foreground = "#8C867D"
 #
 #
-#     background = "#103723"
-#     foreground = "#B2B9C7"
+#     background = "#010103"
+#     foreground = "#8C867D"
 #
 # vim: ft=cfg

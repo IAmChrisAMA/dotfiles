@@ -7,5 +7,3 @@ neofetch
 tput civis 
 read -p ""
 tput cnorm
-
- 

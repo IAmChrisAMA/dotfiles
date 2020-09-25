@@ -1,2 +1,24 @@
-https://hnrss.org/frontpage
-https://lukesmith.xyz/rss.xml
+https://iamchrisama.com/rss.xml
+https://hnrss.org/frontpage                     "Articles"
+https://lukesmith.xyz/rss.xml                   "Blog"
+-------------------------------------------
+# YouTube
+# --> LinusTechTips
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "YouTube" "~YouTube: LinusTechTips"
+# --> Average Linux User
+https://www.youtube.com/feeds/videos.xml?channel_id=UCZiL6BoryLWxyapUuVYW27g "YouTube" "~YouTube: AverageLinuxUser" 
+-------------------------------------------
+# Reddit
+https://www.reddit.com/r/jailbreak.rss          "Reddit" "~/r/jailbreak"
+https://www.reddit.com/r/unixporn.rss           "Reddit" "~/r/unixporn"
+https://www.reddit.com/r/sffpc.rss              "Reddit" "~/r/sffpc"
+https://www.reddit.com/r/linuxmemes.rss         "Reddit" "~/r/linuxmemes"
+
+https://www.reddit.com/r/cobrakai.rss           "Reddit" "~/r/cobrakai"
+https://www.reddit.com/r/breakingbad.rss        "Reddit" "~/r/breakingbad"
+
+https://www.reddit.com/r/okbuddychicanery.rss   "Reddit" "~/r/okbuddychicanery"
+-------------------------------------------
+# RARBG
+https://rarbg.to/rssdd.php?categories=44        "Torrents" "Movies" "~RARBG: 1080p Movies"
+https://rarbg.to/rssdd.php?categories=52        "Torrents" "Movies" "~RARBG: 4K HDR Movies"

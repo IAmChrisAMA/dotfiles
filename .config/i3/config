@@ -431,10 +431,10 @@ mode "$mode_gaps_outer" {
 
 # --> Colorscheme
 exec_always --no-startup-id wal -i ~/Pictures/Wallpapers/
-exec_always sh ~/.scripts/pywal-dunst.sh
+exec_always sh ~/.scripts/pywal/dunst.sh
 
 # --> Taskbar
-exec_always sh ~/.config/polybar/launch.sh
+exec_always sh ~/.scripts/init/polybar.sh
 
 # --> Transparency
 exec pkill picom
@@ -448,14 +448,21 @@ exec mpc update
 exec synergyc --no-tray --restart --name Gray 192.168.1.236:24800
 
 # --> Xresources DPI Switcher 
-exec_always sh ~/.scripts/monitor-setup.sh && xrdb ~/.Xresources
+exec_always sh ~/.scripts/init/monitor.sh && xrdb ~/.Xresources
 
 # --> Mounting All Network Drives
 bindsym $mod+Shift+m exec kitty -e sudo umount /mnt/purple /mnt/blue/*
-bindsym $mod+m       exec kitty -e mount-*
+bindsym $mod+m       exec kitty -e sudo mount-*
 
 # --> Allow Local Access to Website
-bindsym $mod+Shift+h exec kitty -e sudo sh ~/.scripts/host-domain-fix.sh
+bindsym $mod+Shift+h exec kitty -e sudo sh ~/.scripts/domain-fix.sh
+
+# --> Time/Date Fix
+bindsym $mod+Shift+t exec timedatectl set-ntp true && timedatectl set-ntp false
+
+# --> VPN Connect
+exec piactl background enable
+exec piactl connect
 
 # Unused
 ########################################################

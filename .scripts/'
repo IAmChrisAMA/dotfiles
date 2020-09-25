@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias icat="kitty +kitten icat"
 alias please="sudo"
 
-alias sl="sh ~/.scripts/loop-sl.sh" 
+alias sl="sh ~/.scripts/fun/loop-sl.sh" 
 alias git-out="sh ~/.scripts/git/out.sh"
 alias git-in="sh ~/.scripts/git/in.sh"
 
@@ -113,8 +113,8 @@ alias mount-purple="sh ~/.scripts/mount/purple.sh"
 alias mount-blue="sh ~/.scripts/mount/blue.sh"
 alias mount-\*="sh ~/.scripts/mount/blue.sh && sudo ~/.scripts/mount/purple.sh"
 
-alias neo="sh ~/.scripts/clean/neofetch.sh"
-alias for="sh ~/.scripts/clean/fortune.sh"
+alias neo="sh ~/.scripts/fun/neofetch.sh"
+alias for="sh ~/.scripts/fun/fortune.sh"
 
 ## wal
 
