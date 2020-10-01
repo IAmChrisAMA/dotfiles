@@ -455,7 +455,7 @@ bindsym $mod+Shift+m exec kitty -e sudo umount /mnt/purple /mnt/blue/*
 bindsym $mod+m       exec kitty -e sudo mount-*
 
 # --> Allow Local Access to Website
-bindsym $mod+Shift+h exec kitty -e sudo sh ~/.scripts/domain-fix.sh
+bindsym $mod+Shift+h exec kitty -e sudo sh ~/.scripts/init/domain-fix.sh
 
 # --> Time/Date Fix
 bindsym $mod+Shift+t exec timedatectl set-ntp true && timedatectl set-ntp false

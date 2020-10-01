@@ -113,8 +113,8 @@ alias mount-purple="sh ~/.scripts/mount/purple.sh"
 alias mount-blue="sh ~/.scripts/mount/blue.sh"
 alias mount-\*="sh ~/.scripts/mount/blue.sh && sudo ~/.scripts/mount/purple.sh"
 
-alias neo="sh ~/.scripts/clean/neofetch.sh"
-alias for="sh ~/.scripts/clean/fortune.sh"
+alias neo="sh ~/.scripts/fun/neofetch.sh"
+alias for="sh ~/.scripts/fun/fortune.sh"
 
 ## wal
 
