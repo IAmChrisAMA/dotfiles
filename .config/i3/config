@@ -441,7 +441,7 @@ exec pkill picom
 exec picom -b -f
 
 # --> Music
-exec mpd ~/.config/mpd/mpd.conf
+exec pkill mpd && mpd ~/.config/mpd/mpd.conf
 exec mpc update
 
 # --> Cross-platform M&K Support 
@@ -452,7 +452,6 @@ exec_always sh ~/.scripts/init/monitor.sh && xrdb ~/.Xresources
 
 # --> Mounting All Network Drives
 bindsym $mod+Shift+m exec kitty -e sudo umount /mnt/purple /mnt/blue/*
-bindsym $mod+m       exec kitty -e sudo mount-*
 
 # --> Allow Local Access to Website
 bindsym $mod+Shift+h exec kitty -e sudo sh ~/.scripts/init/domain-fix.sh

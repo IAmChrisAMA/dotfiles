@@ -1,7 +1,7 @@
 #! /usr/bin/env zsh
 
 trap "tput cnorm; exit" 2
-VAR=$(( $RANDOM % 4 ))
+VAR=$(( $RANDOM % 3 ))
 
 random_say() {
     case $VAR in
@@ -18,7 +18,5 @@ random_say() {
 }
 
 clear
-fortune | random_say
-tput civis 
-read
+while [ true ]; do fortune | random_say && tput civis && read && clear && sh ~/.scripts/fun/fortune.sh; done
 tput cnorm
