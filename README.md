@@ -6,7 +6,7 @@
 * `/etc/fstab` with CIFS mounting.
 * `/etc/hosts` with domain redirect on LAN (with use with `~/.scripts/init/domain-fix.sh` script).
 * `crontab` with starting domain-fix script at boot.
-* `~/.config/i3/confg` has literally every other script I use.
+* `~/.config/i3/config` has literally every other script I use.
 
 ## Daily Use
 * `newsboat`
