@@ -1,0 +1,23 @@
+This file is a way of using/remembering my root scripts (just in case)
+There is no use of IP/Username/Passwords here but it's a rough example of how to reuse them if needed.
+
+____________________________________________ CIFS Mounting ______________________________________________
+
+--> /etc/fstab
+//[server-ip]/[server-name]     /mnt/[server]/[server-name]     cifs    credentials=/home/[username]/.files/secret/[credentials_file],_netev,iocharset=utf8,file_mode=0775,dir_mode=0775    0 0
+
+--> /home/[username]/.files/secret/[credentials_file]
+username=[username]
+password=[password]
+
+## Make sure to set permissions
+    sudo chown root: [credentials_file]
+    sudo chmod 600 [credentials_file]
+
+____________________________________________ Domain Fixing on Boot ______________________________________________
+
+--> sudo crontab -e
+
+@reboot sh /home/[username]/.scripts/init/domain-fix.sh
+
+## Sudo is important is it allows root permissions.
