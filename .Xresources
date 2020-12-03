@@ -1,4 +1,4 @@
-Xft.dpi:       128 
+Xft.dpi:       160 
 ! 96 = 1080p | 128 = 1440p
 
 Xft.antialias: true

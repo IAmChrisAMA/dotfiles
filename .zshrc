@@ -105,24 +105,32 @@ source $ZSH/oh-my-zsh.sh
 alias icat="kitty +kitten icat"
 alias please="sudo"
 
-alias sl="sh ~/.scripts/loop-sl.sh" 
 alias git-out="sh ~/.scripts/git/out.sh"
 alias git-in="sh ~/.scripts/git/in.sh"
 
-alias mount-purple="sh ~/.scripts/mount/purple.sh"
-alias mount-blue="sh ~/.scripts/mount/blue.sh"
-alias mount-\*="sh ~/.scripts/mount/blue.sh && sudo ~/.scripts/mount/purple.sh"
-
 alias neo="sh ~/.scripts/fun/neofetch.sh"
 alias for="sh ~/.scripts/fun/fortune.sh"
+
+alias ccat="clear && cat"
+
+alias skip-integ="export MAKEPKG='makepkg --skipinteg'"
 
 ## wal
 
 (cat ~/.cache/wal/sequences &)
 cat ~/.cache/wal/sequences
 
-## Zathura-Pywal
-export PATH="/home/cdnutter/.local/bin:$PATH"
+## DEVKIT
+
+export DEVKITPRO=/opt/devkitpro
+export DEVKITARM=/opt/devkitpro/devkitARM
+export DEVKITPPC=/opt/devkitpro/devkitPPC
 
 ## PATH
+export PATH="/home/cdnutter/.local/bin:$PATH"
+export PATH="/home/cdnutter/.programs:$PATH"
+export PATH="${DEVKITARM}/bin/:$PATH"
+
 PATH=$PATH$(find "$HOME/.scripts" -type d -not -path '/.' -printf ":%p")
+
+

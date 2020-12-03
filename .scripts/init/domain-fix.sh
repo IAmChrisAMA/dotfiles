@@ -7,7 +7,6 @@ EDITOR=vim
 #echo "Make sure you are 100% the connection you have is proper or else it'll assume outgoing everytime."
 #echo "Ctrl-C or Ctrl-D to cancel now. Otherwise Press any key to continue..."
 #read -p ""
-#if curl ipinfo.io/ip | grep -A 2 --quiet -oh "107.221."                      # UPDATE: IT DIDN'T WORK! MY METHOD PREVAILS!...Switched ip websites, this one should work the same just curl is cleaner.
 
 #if wget http://ipecho.net/plain -O - -q | grep -A 2 --quiet -oh "107.221."    # Add more to the public to make it more accurate however this should be fine. 
 if ifconfig | grep -oh --quiet "192.168.1.127"                                 # Decided to switch to internal ip instead (the odds of this being a problem are like 1/1,000,000. 

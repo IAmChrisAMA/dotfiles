@@ -441,8 +441,7 @@ exec pkill picom
 exec picom -b -f
 
 # --> Music
-exec pkill mpd && mpd ~/.config/mpd/mpd.conf
-exec mpc update
+exec_always ~/.scripts/init/audio-fix.sh
 
 # --> Cross-platform M&K Support 
 exec synergyc --no-tray --restart --name Gray 192.168.1.236:24800
@@ -460,9 +459,6 @@ bindsym $mod+Shift+h exec kitty -e sudo sh ~/.scripts/init/domain-fix.sh
 bindsym $mod+Shift+t exec timedatectl set-ntp true && timedatectl set-ntp false
 
 # --> VPN Connect
-exec piactl background enable
-exec piactl connect
-
-# Unused
-########################################################
+#exec piactl background enable
+#exec piactl connect
 
